@@ -6,7 +6,7 @@ function MovieApp() {
     <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/movie/:id" element={<Detail />}></Route>
+        <Route path="movie/:id" element={<Detail />}></Route>
       </Routes>
     </Router>
   );
