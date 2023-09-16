@@ -40,8 +40,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://hsb9823.github.io/react",
   "devDependencies": {
     "prettier": "3.0.3"
-  }
+  },
+  "homepage": "https://hsb9823.github.io/react"
 }
