@@ -4,7 +4,6 @@ import Movie from "./components/Movie";
 import MovieApp from "./movieApp";
 
 import { BrowserRouter } from "react-router-dom";
-import Detail from "./routes/Detail";
 <BrowserRouter basename={process.env.PUBLIC_URL}>
   <MovieApp />
 </BrowserRouter>;
