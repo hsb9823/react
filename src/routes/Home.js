@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import Movie from "../components/Movie";
+import styles from "./Home.module.css";
+
 function Home() {
   const [loading, setLoading] = useState(true);
   const [movies, setMovies] = useState([]);
@@ -18,13 +20,18 @@ function Home() {
     // console.log(movies.genres);
   }, []);
   return (
-    <div>
-      {loading ? <h1>Loading...</h1> : null}
-      <div>
-        <h2>Recommended movies with a rating of 9 or higher</h2>
-        <hr />
+    <div className={styles.container}>
+      <div className={styles.loader}>
+        {loading ? (
+          <h1 className={styles.loading}>Loading...</h1>
+        ) : (
+          <h2 className={styles.page_title}>
+            Recommended movies with a rating of 9 or higher
+          </h2>
+        )}
       </div>
-      <div>
+
+      <div className={styles.movies}>
         {movies.map((movie) => (
           <Movie
             key={movie.id}
